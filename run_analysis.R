@@ -1,7 +1,7 @@
 library(dplyr);
 # Get File
 # 
-folder <- "/Users/Atif/Dropbox/Projects/CR7_Data Science/3. Getting and Cleaning Data/Week4/Project/UCI HAR Dataset/";
+folder <- "/UCI HAR Dataset/";
 
 features <- read.csv(paste(folder, "features.txt", sep = ""), sep = " ", header = FALSE, stringsAsFactors = TRUE);
 activityLabels <- read.csv(paste(folder, "activity_labels.txt", sep = ""), sep = " ", header = FALSE, stringsAsFactors = FALSE)
