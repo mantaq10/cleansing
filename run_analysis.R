@@ -45,4 +45,4 @@ finalData <- cbind(Subject, tidyData, tidyLabel)
 finalTidyData <- group_by(finalData, tidyLabel, V1) %>% summarize_each(funs(mean))
 colnames(finalTidyData)[2] <- "Subject"
 
-finalTidyData
+write.table(finalTidyData, file = "finalTidyData.txt", row.names = FALSE)
